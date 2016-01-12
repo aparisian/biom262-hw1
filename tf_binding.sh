@@ -1,10 +1,9 @@
-#PBS -q <queue name>
-#PBS -N <job name>
-#PBS -l nodes=10:ppn=2
-#PBS -l walltime=0:50:00
-#PBS -o <output file>
-#PBS -e <error file>
+#PBS -q hotel
+#PBS -N TF Binding
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=0:60:00
+#PBS -o tf_binding.sh.o>
+#PBS -e tf_binding.sh.e
 #PBS -V
-#PBS -M <email address list>
+#PBS -M aparisia@ucsd.edu,vivianw.violin@gmail.com
 #PBS -m abe
-#PBS -A <account>
