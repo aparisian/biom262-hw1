@@ -7,3 +7,5 @@
 #PBS -V
 #PBS -M aparisia@ucsd.edu,vivianw.violin@gmail.com
 #PBS -m abe
+
+echo "Hello I am a message in standard out (stdout)"
