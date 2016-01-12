@@ -10,10 +10,20 @@
 
 Hello I am a message in standard error(stderr) >&2
 
-
 echo "Hello I am a message in standard out (stdout)"
 
-Exercise 4
+#Exercise 1
+cd ~/biom262-2016/weeks/week01/data
+grep 'NFKB' tf.bed > tf.nfkb.bed
+
+#Exercise 2
+awk '$3 ~ /transcript/{print}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf
+
+#Exercise 3
+module load biotools
+bedtools flank -s -i gencode.v19.annotation.chr22.transcript.gtf -g hg19.genome -l 2000 -r 0 > gencode.v19.annotation.chr22.transcript.promoter.gtf
+
+#Exercise 4
 module load biotools
 bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 
