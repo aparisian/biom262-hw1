@@ -8,9 +8,9 @@
 #PBS -M aparisia@ucsd.edu,vivianw.violin@gmail.com
 #PBS -m abe
 
-Hello I am a message in standard error(stderr) >&2
-
 echo "Hello I am a message in standard out (stdout)"
+
+echo "Hello I am a message in standard error (stderr) >&2"
 
 #Exercise 1
 cd ~/biom262-2016/weeks/week01/data
