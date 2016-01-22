@@ -1,8 +1,8 @@
 #PBS -q hotel
-#PBS -N TF Binding
-#PBS -l nodes=1:ppn=8
-#PBS -l walltime=0:60:00
-#PBS -o tf_binding.sh.o>
+#PBS -N tf_binding.sh
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=0:10:00
+#PBS -o tf_binding.sh.o
 #PBS -e tf_binding.sh.e
 #PBS -V
 #PBS -M aparisia@ucsd.edu,vivianw.violin@gmail.com
